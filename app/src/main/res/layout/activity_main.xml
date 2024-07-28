@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view_bucket_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bucket List!"
+        android:textSize="50dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_things_to_do"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_bucket_list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:cardBackgroundColor="#AE8787"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/text_view_things_to_do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center_horizontal"
+            android:text="Things To Do!"
+            android:textColor="#222222"
+            android:textSize="30sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_places_to_go"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view_things_to_do"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#91AE87"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/text_view_places_to_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center_horizontal"
+            android:text="Places to Go!"
+            android:textSize="30sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
